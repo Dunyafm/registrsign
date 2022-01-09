@@ -31,6 +31,7 @@ body
     width: 300px;
     height: 430px;
 }
+
 h1
 {
     margin: -10px 0 20px 0;
@@ -54,7 +55,6 @@ input.txtb
     font-size: 15px;
     transition: 0.2s ease;
 }
-
 input[type="submit"]
 {
   height: 32px;
@@ -76,6 +76,7 @@ input[type="submit"]:focus
 {
   transform: scale(1.04);
 }
+
 .right-box
 {
     position: absolute;
@@ -89,8 +90,6 @@ input[type="submit"]:focus
     background-size: cover;
     background-position: center;
 }
-
-
 small a
 {
     margin-left: 4px; 
@@ -102,15 +101,14 @@ small a:hover
     text-decoration: none;
 }
 
-@-webkit-keyframes autofill {
+@keyframes autofill {
     to {
         color: black;
         background: transparent;
     }
 }
 
-  .txtb:-webkit-autofill {
-    -webkit-animation-name: autofill;
-    -webkit-animation-fill-mode: both;
-}    
-
+.txtb:-webkit-autofill {
+    animation-name: autofill;
+    animation-fill-mode: both;
+}
